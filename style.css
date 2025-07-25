@@ -233,3 +233,115 @@ h1, h2, h3 {
   font-size: 36px;
   margin-bottom: 10px;
 }
+.subtitle {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: gray;
+}
+
+.deals-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+.deal-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.deal-box.small {
+  height: 150px;
+}
+
+.deal-box.large {
+  flex: 2;
+  min-width: 300px;
+  height: 320px;
+}
+.deal-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+.deal-text {
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.deal-text.center {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  height: fit-content;
+}
+
+.deal-text h3,
+.deal-text h2 {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.deal-text a {
+  color: white;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 550;
+  display: inline;
+}
+.hero {
+  background-image: url('news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 180px 200px 200px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
